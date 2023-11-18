@@ -1,0 +1,24 @@
+### get all 
+GET http://localhost:1234/api/publications?page=1
+
+### get all by user
+GET http://localhost:1234/api/publications/654d96708c4231fec7c3cde8?page=1
+
+### get one publication
+GET http://localhost:1234/api/publications/6553e0f6ccbc6d70c88f8da3
+
+### create 
+POST http://localhost:1234/api/publications
+Content-Type: application/json
+auth-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGQ5NjhlOGM0MjMxZmVjN2MzY2RlYSIsIm5hbWUiOiJJcm1hIiwic3VybmFtZSI6IkNhc3RpbGxvIiwibmljayI6ImlybWFfMTIzIiwiZW1haWwiOiJpcm1hQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTk5NjkyNywiZXhwIjoxNzAxMjA2NTI3fQ.OeCv7oy7UipwwaVSdniyI--5rAoYO7CJIk7o25Ky7ck
+
+{
+	"text": "primer texto de prueba de irma"
+}
+
+### eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGQ5NjhlOGM0MjMxZmVjN2MzY2RlYSIsIm5hbWUiOiJJcm1hIiwic3VybmFtZSI6IkNhc3RpbGxvIiwibmljayI6ImlybWFfMTIzIiwiZW1haWwiOiJpcm1hQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTk5NjkyNywiZXhwIjoxNzAxMjA2NTI3fQ.OeCv7oy7UipwwaVSdniyI--5rAoYO7CJIk7o25Ky7ck
+
+### delete publication
+DELETE http://localhost:1234/api/publications/6553e25f2ffdc8e467bfcacd
+Content-Type: application/json
+auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGQ5NjhlOGM0MjMxZmVjN2MzY2RlYSIsIm5hbWUiOiJJcm1hIiwic3VybmFtZSI6IkNhc3RpbGxvIiwibmljayI6ImlybWFfMTIzIiwiZW1haWwiOiJpcm1hQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTk5NjkyNywiZXhwIjoxNzAxMjA2NTI3fQ.OeCv7oy7UipwwaVSdniyI--5rAoYO7CJIk7o25Ky7ck

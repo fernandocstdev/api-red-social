@@ -1,0 +1,43 @@
+### get all
+GET http://localhost:1234/api/users/1
+Content-Type: application/json
+auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGMzZDQ4N2E2ZmQzZWRlYTQzODU1YSIsIm5hbWUiOiJGZXJuYW5kbyIsInN1cm5hbWUiOiJEb3JhbnRlcyIsIm5pY2siOiJmZXJfMTIzIiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTQ5ODAxNiwiZXhwIjoxNzAwNzA3NjE2fQ.mgN14LKqWLMhOxVIMszVXdrerVwTg8Ax6z1JARayXeM
+
+### get one 
+GET http://localhost:1234/api/user/654d54c58e7881b17bb3698d
+auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGMzZDQ4N2E2ZmQzZWRlYTQzODU1YSIsIm5hbWUiOiJGZXJuYW5kbyIsInN1cm5hbWUiOiJEb3JhbnRlcyIsIm5pY2siOiJmZXJfMTIzIiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTQ5ODAxNiwiZXhwIjoxNzAwNzA3NjE2fQ.mgN14LKqWLMhOxVIMszVXdrerVwTg8Ax6z1JARayXeM
+
+### create user 
+POST http://localhost:1234/api/users/create
+Content-Type: application/json
+
+{
+	"name": "Raquel",
+	"surname": "Castillo",
+	"nick": "raquel_123",
+	"email": "raquel@example.com",
+	"password": "123aaa456"
+}
+
+### login user
+POST http://localhost:1234/api/users/login
+Content-Type: application/json
+
+{
+	"email": "irma@example.com",
+	"password": "123aaa456"
+}
+
+### update user
+PATCH http://localhost:1234/api/user/654c6b2ef55e2ced45ca9a1b
+Content-Type: application/json
+auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGMzZDQ4N2E2ZmQzZWRlYTQzODU1YSIsIm5hbWUiOiJGZXJuYW5kbyIsInN1cm5hbWUiOiJEb3JhbnRlcyIsIm5pY2siOiJmZXJfMTIzIiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTQ5ODAxNiwiZXhwIjoxNzAwNzA3NjE2fQ.mgN14LKqWLMhOxVIMszVXdrerVwTg8Ax6z1JARayXeM
+
+{
+	"name": "Javier"
+}
+
+### delete user
+DELETE http://localhost:1234/api/user/654d54c58e7881b17bb3698d
+Content-Type: application/json
+auth-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1NGMzZDQ4N2E2ZmQzZWRlYTQzODU1YSIsIm5hbWUiOiJGZXJuYW5kbyIsInN1cm5hbWUiOiJEb3JhbnRlcyIsIm5pY2siOiJmZXJfMTIzIiwiZW1haWwiOiJleGFtcGxlQGV4YW1wbGUuY29tIiwicm9sZSI6InJvbGVfdXNlciIsImlhdCI6MTY5OTQ5ODAxNiwiZXhwIjoxNzAwNzA3NjE2fQ.mgN14LKqWLMhOxVIMszVXdrerVwTg8Ax6z1JARayXeM
